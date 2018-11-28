@@ -1,16 +1,18 @@
 
 ## 结构：
-1. com.xfqb.base.xml  
-> CodeTemplate：写入模版  
-   Dom4jUtils：主要功能实现  
-   FeildType：定义的变量返回类型筛选  
-   PojoReflexUtils：获取类信息（变量，方法等） 
-   Test：main测试方法
-  
-2. com.xfqb.base.pojo  
->生成与解析测试包  
-3. com.xfqb.base  
->SpringBoot启动类
+
+1. com.jzkg.xml.pojo  
+	>生成与解析测试包  
+2. com.jzkg.xml.template  
+	>CodeTemplate：写入模版  
+	FeildType：定义的变量返回类型筛选  
+3. com.jzkg.xml.util  
+	>Dom4jUtils：主要功能实现  
+	PojoReflexUtils：获取类信息（变量，方法等）  
+	Test：main测试方法  
+4. StorageXML文件夹  
+	>code.xml：自动化生成的模版  
+	test.xml：多类集成转换生成后的XML文件  
 	
 
 ## Code.xml
@@ -30,6 +32,11 @@
 注意事项：
 1. 生成的实体类基于lombok，需要引入jar包
 2. 生成的实体类需要自行格式化排版。
+
+Code.xml标签定义说明：  
+1. 标签bean表示类，属性name为类名称，package为所在包。  
+2. 标签field表示变量，属性name为变量名称，type为变量类型。（以所在包定义）  
+3. 标签method表示方法，属性name为方法名，type为方法返回类型，default为静态方法开关。    
 	
 ## 多类集成生成XML
 功能：
