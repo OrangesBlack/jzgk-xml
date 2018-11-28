@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<code>
+  <bean name="TestPojo" package="com.jzkg.xml.pojo">
+    <feilds>
+      <field name="id" type="java.lang.Long"/>
+      <field name="name" type="java.lang.String"/>
+      <field name="count" type="java.lang.Integer"/>
+      <field name="isDefault" type="java.lang.Boolean"/>
+    </feilds>
+    <methods>
+      <method name="equals" type="boolean"/>
+      <method name="toString" type="java.lang.String"/>
+      <method name="hashCode" type="int"/>
+      <method name="getName" type="java.lang.String"/>
+      <method name="getId" type="java.lang.Long"/>
+      <method name="setName" type="void"/>
+      <method name="canEqual" type="boolean"/>
+      <method name="getCount" type="java.lang.Integer"/>
+      <method name="setCount" type="void"/>
+      <method name="getIsDefault" type="java.lang.Boolean"/>
+      <method name="setId" type="void"/>
+      <method name="testGame" type="java.lang.String"/>
+      <method name="testCount" type="java.lang.Integer"/>
+      <method name="setIsDefault" type="void"/>
+    </methods>
+  </bean>
+</code>
